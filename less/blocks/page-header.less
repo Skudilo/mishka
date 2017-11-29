@@ -3,15 +3,41 @@
   width: 320px;
   margin: 0 auto;
   height: 79px;
-  vertical-align: middle;
   padding-top: 22px;
    border-bottom: 1px solid #ececec;
 }
 
 .page-header__logo {
-  display:block;
-  width: 90px;
+  width: 110px;
 
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: 770px) {
+  .page-header {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 770px;
+    height: 90px;
+  }
+
+  .page-header__logo {
+    margin: 0;
+  }
+}
+
+@media(min-width: 1250px) {
+  .page-header {
+    padding: 0 50px;
+
+    width: 1150px;
+    height: 95px;
+  }
+
+  .page-header__logo {
+    margin-left: 452px;
+  }
 }
