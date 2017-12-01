@@ -246,13 +246,20 @@ body {
   margin: 0 auto;
   padding-top: 85px;
   background: url(../img/hero-mobile@1x.jpg) no-repeat top;
+  background-size: auto 373px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url(../img/hero-mobile@2x.jpg);
+    background-size: auto 373px;
+  }
 }
 .intro__title {
+  width: 260px;
+  margin: 0 auto 125px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  width: 260px;
-  margin: 0 auto 125px;
 }
 .intro__block {
   display: -webkit-box;
@@ -264,13 +271,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 30px;
   min-height: 125px;
-  text-decoration: none;
+  padding: 0 30px;
+  font-weight: bold;
   font-size: 19px;
   line-height: 24px;
-  font-weight: bold;
   color: #ffffff;
+  text-decoration: none;
   cursor: pointer;
 }
 .intro__block:active {
@@ -293,16 +300,29 @@ body {
 }
 @media (min-width: 770px) {
   .intro {
+    position: relative;
     width: 770px;
     padding: 0 50px;
-    background: url(../img/hero-tablet@1x.jpg) no-repeat top;
     padding-top: 165px;
+    background: url(../img/hero-tablet@1x.jpg) no-repeat top;
+    background-size: cover;
+  }
+  .intro::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-image: url(../img/bg-zigzag-fill.svg);
+    background-repeat: no-repeat;
+    background-position: top;
   }
   .intro__title {
     width: 500px;
+    margin-bottom: 370px;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 370px;
   }
   .intro__blocks {
     display: -webkit-box;
@@ -313,13 +333,26 @@ body {
     width: 334px;
   }
 }
+@media (min-width: 770px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 770px) and (min-resolution: 144dpi), (min-width: 770px) and (min-resolution: 1.5dppx) {
+  .intro {
+    background: url(../img/hero-tablet@2x.jpg) no-repeat top;
+    background-size: cover;
+  }
+}
 @media (min-width: 1250px) {
   .intro {
     width: 1250px;
-    background: url(../img/hero-tablet@1x.jpg) no-repeat top;
     padding: 165px 100px 0;
+    background: url(../img/hero-desktop@1x.jpg) no-repeat top;
+    background-size: 1160px auto;
   }
   .intro__block {
     width: 525px;
+  }
+}
+@media (min-width: 1250px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1250px) and (min-resolution: 144dpi), (min-width: 1250px) and (min-resolution: 1.5dppx) {
+  .intro {
+    background: url(../img/hero-desktop@2x.jpg) no-repeat top;
+    background-size: 1160px auto;
   }
 }
