@@ -115,7 +115,13 @@
  .main-nav__items--pages {
    position: absolute;
    left: 50px;
-   bottom: -50px;
+   bottom: -40px;
+   z-index: 2;
+ }
+
+ .main-nav__items--pages .main-nav__link {
+   font-size: 15px;
+   line-height: 24px;
  }
 
  .main-nav__link {
@@ -166,16 +172,28 @@
   .main-nav__delivery {
     display: block;
     position: absolute;
-    bottom: -65px;
+    bottom: -55px;
     right: 50px;
+    z-index: 2;
+  }
+
+  .main-nav__items--sales .main-nav__link,
+  .main-nav__items--sales .main-nav__delivery {
+    font-size: 15px;
+    line-height: 24px
   }
 }
 
 @media(min-width: 1250px) {
 
   .main-nav__items--pages {
-    bottom: 40px;
+    bottom: 35px;
     left: 50px;
+  }
+
+  .main-nav__items--pages .main-nav__link {
+    font-size: 17px;
+    line-height: 24px;
   }
 
   .main-nav__delivery {
@@ -184,16 +202,38 @@
 
   .main-nav__link--basket {
     width: 270px;
+
+    &::before {
+      top: 5px;
+      left: 33px;
+    }
+    &::after {
+      top: -28px;
+    }
   }
 
   .main-nav__items--sales {
     display: flex;
     position: absolute;
     left: 50px;
-    bottom: -50px;
+    bottom: -40px;
+    z-index: 2;
   }
 
   .main-nav__link--new {
-    margin-right: 50px;
+    margin-right: 60px;
+  }
+
+  .main-nav__link--form {
+    padding-left: 35px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 90px;
+      top: -26px;
+      left: 0;
+      background-color: #ececec;
+    }
   }
 }
