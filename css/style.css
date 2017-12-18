@@ -1337,3 +1337,56 @@ li {
     font-size: 17px;
   }
 }
+.form {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.form__text {
+  margin-bottom: 23px;
+  font-size: 13px;
+}
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  border: none;
+}
+.form__legend {
+  position: relative;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px ;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+.form__legend::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 60px;
+  width: 200px;
+  height: 1px;
+  background-color: #63d1bb;
+}
+.form__label {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding-left: 63px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+}
+.form__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+.form__radio {
+  display: none;
+}
