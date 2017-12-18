@@ -6,6 +6,12 @@
 
 .catalog__item {
   margin-bottom: 29px;
+  &:hover {
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .catalog__wrap {
@@ -14,6 +20,8 @@
   border: 1px solid #ededed;
   border-top: 0;
 }
+
+.catalog__wrap
 
 .catalog__title {
   font-size: 17px;
@@ -66,9 +74,6 @@
 
   .catalog__item {
     margin-bottom: 53px;
-  }
-
-  .catalog__item {
     display: flex;
   }
 
@@ -104,5 +109,38 @@
 
   .catalog__price {
     font-size: 17px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog {
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 125px;
+  }
+
+  .catalog__item {
+    width: 316px;
+    display: block;
+  }
+
+  .catalog__picture {
+    width: 316px;
+  }
+
+  .catalog__wrap {
+    width: 316px;
+    min-height: 197px;
+    border: 1px solid #ededed;
+    border-top: 0;
+  }
+
+  .catalog__descr {
+    margin-bottom: 0;
+  }
+
+  .catalog__title {
+    margin-bottom: 6px;
   }
 }
