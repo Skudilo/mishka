@@ -1343,7 +1343,6 @@ li {
     font-size: 17px;
   }
 }
-<<<<<<< HEAD
 @media (min-width: 1150px) {
   .catalog {
     width: 1050px;
@@ -1452,7 +1451,6 @@ li {
     margin-bottom: 24px;
   }
   .video__descr {
-    width: auto;
     margin-left: 40px;
     font-size: 15px;
     line-height: 30px;
@@ -1460,6 +1458,7 @@ li {
     margin-bottom: 34px;
   }
   .video__title {
+    position: relative;
     font-size: 20px;
     margin-left: 107px;
     margin-bottom: 34px;
@@ -1481,14 +1480,37 @@ li {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .video__picture-wrap {
     width: 682px;
   }
+  .video__text-wrap {
+    width: 365px;
+    padding-left: 78px;
+    padding-top: 67px;
+  }
   .video__title {
     width: 160px;
+    margin-left: 0;
+    margin-bottom: 49px;
   }
-=======
+  .video__title::before {
+    top: -48px;
+    left: 0px;
+  }
+  .video__descr {
+    width: 230px;
+    margin-left: 0;
+    margin-bottom: 47px;
+  }
+  .video__btn {
+    width: 230px;
+    margin: 0;
+  }
+}
 .form {
   width: 260px;
   margin: 0 auto;
@@ -1502,6 +1524,7 @@ li {
   margin: 0;
   padding: 0;
   padding-top: 20px;
+  margin-bottom: 26px;
   border: none;
 }
 .form__legend {
@@ -1531,15 +1554,48 @@ li {
   line-height: 18px;
   color: #000000;
 }
-.form__label::before {
+.form__radio,
+.form__checkbox {
+  display: none;
+}
+.form__label--type::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -8px;
   left: 0;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #444444;
 }
-.form__radio {
+.form__label--type::after {
   display: none;
->>>>>>> 3a39db19738fa3aa85b7ff3b21ab4c48101f3bd4
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #62d1ba;
+}
+#radio-1:checked + .form__label--type::after,
+#radio-2:checked + .form__label--type::after {
+  display: block;
+}
+.form__label--checkbox {
+  margin-bottom: 30px;
+}
+.form__label--checkbox::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #444444;
+}
+.form__checkbox:checked + .form__label--checkbox::before {
+  background: url(../img/icon-tick.svg) no-repeat center;
+  background-size: 22px auto;
 }

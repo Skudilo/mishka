@@ -194,12 +194,9 @@
     <section class="catalog">
       <div class="catalog__item">
         <picture class="catalog__picture">
-<<<<<<< HEAD
           <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
           <source media="(min-width: 770px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-=======
           <source media(min-width="770px" ) srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
->>>>>>> 3a39db19738fa3aa85b7ff3b21ab4c48101f3bd4
           <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg" alt="каталог фото">
         </picture>
         <div class="catalog__wrap">
@@ -217,12 +214,9 @@
       </div>
       <div class="catalog__item">
         <picture class="catalog__picture">
-<<<<<<< HEAD
           <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
           <source media="(min-width: 770px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-=======
           <source media(min-width="770px" ) srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
->>>>>>> 3a39db19738fa3aa85b7ff3b21ab4c48101f3bd4
           <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg" alt="каталог фото">
         </picture>
         <div class="catalog__wrap">
@@ -240,12 +234,9 @@
       </div>
       <div class="catalog__item">
         <picture class="catalog__picture">
-<<<<<<< HEAD
           <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
           <source media="(min-width: 770px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-=======
           <source media(min-width="770px" ) srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
->>>>>>> 3a39db19738fa3aa85b7ff3b21ab4c48101f3bd4
           <img src="img/photo-toys-mobile@1x.jpg" alt="каталог фото">
         </picture>
         <div class="catalog__wrap">
@@ -265,6 +256,7 @@
     <section class="video">
       <div class="video__picture-wrap">
         <picture class="video__picture">
+          <source media=(min-width:1150px) srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
           <source media=(min-width:770px) srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
           <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Процесс производства">
         </picture>
@@ -276,6 +268,45 @@
       </div>
     </section>
   </main>
+  <footer class="page-footer page-footer--inner">
+    <a href="#" class="page-footer__logo">
+      <span class="visually-hidden">Mishka</span>
+      <svg class="page-footer__logo-icon" width="102" height="34">
+        <use xlink:href="#icon-logo-footer"></use>
+      </svg>
+    </a>
+    <ul class="page-footer__social">
+      <li class="page-footer__social-item">
+        <a href="#" class="page-footer__social-link">
+          Instagram
+          <svg class="page-footer__social-icon" width="22" height="21">
+            <use xlink:href="#icon-insta"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="page-footer__social-item">
+        <a href="#" class="page-footer__social-link">
+          Facebook
+          <svg class="page-footer__social-icon" width="15" height="29">
+            <use xlink:href="#icon-fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="page-footer__social-item">
+        <a href="#" class="page-footer__social-link">
+          Twitter
+          <svg class="page-footer__social-icon" width="24" height="20">
+            <use xlink:href="#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <a class="page-footer__copyright" href="#">Разработано <span class="visually-hidden">htmlacademy</span>
+      <svg class="page-footer__copyright-icon" width="27" height="34">
+        <use xlink:href="#icon-htmlacademy"></use>
+      </svg>
+    </a>
+  </footer>
   <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
